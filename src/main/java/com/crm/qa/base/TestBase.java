@@ -42,7 +42,7 @@ public class TestBase {
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Manikya\\Downloads\\SELENIUM\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
